@@ -36,10 +36,6 @@ pipeline to produce multi-view visual anagrams.
 
 ---
 
-### Detailed Architecture The detailed architecture highlights the internal denoising loop, multi-view projections, inverse mappings, and aggregation strategy used to maintain consistency across transformations during diffusion. 
-<p align="center"> <img src="figures/System Architecture/Detailed Architecture Diagram.jpg" width="900"/> </p>
-
----
 
 ## Step-by-Step Working Overview (Pipeline)
 
@@ -81,3 +77,10 @@ a single image that reveals **different meanings under specific transformations*
   under different transformations.
 - Optional animations and quantitative metrics can be generated for analysis.
 
+---
+
+### Detailed Architecture 
+The detailed architecture highlights the internal denoising loop, multi-view projections, inverse mappings, and aggregation strategy used to maintain consistency across transformations during diffusion. 
+<p align="center"> <img src="figures/System Architecture/Detailed Architecture Diagram.jpg" width="900"/> </p>
+
+---
