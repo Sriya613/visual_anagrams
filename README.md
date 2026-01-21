@@ -35,3 +35,49 @@ pipeline to produce multi-view visual anagrams.
 </p>
 
 ---
+
+### Detailed Architecture The detailed architecture highlights the internal denoising loop, multi-view projections, inverse mappings, and aggregation strategy used to maintain consistency across transformations during diffusion. 
+<p align="center"> <img src="figures/System Architecture/Detailed Architecture Diagram.jpg" width="900"/> </p>
+
+---
+
+## Step-by-Step Working Overview (Pipeline)
+
+The system follows a **three-stage coarse-to-fine diffusion pipeline** to generate
+a single image that reveals **different meanings under specific transformations**.
+
+### Step 1: Provide Inputs
+- **Reference Image**: An image that anchors the overall structure (e.g., a face,
+  object, painting, or scene). Simpler, single-subject images work best.
+- **Text Prompts**: One prompt per view, describing what the image should look like
+  when seen under a specific transformation (e.g., “a tiger” vs. “a human face”).
+- **Transformations**: Choose invertible views such as flips, patch-based,
+  triangle-based, or colour-space transformations.
+
+---
+
+### Step 2: Stage 1 – Low-Resolution Image-to-Image Diffusion (64×64)
+- The model generates a coarse visual anagram by jointly denoising the reference
+  image across all specified views.
+- This stage ensures the **core semantic alignment** between prompts and
+  transformations.
+
+---
+
+### Step 3: Stage 2 – Multi-View Super-Resolution (256×256)
+- The coarse output is upsampled while reapplying the same transformations.
+- Improves structural clarity and texture without breaking the illusion.
+
+---
+
+### Step 4: Stage 3 – High-Resolution Refinement (1024×1024)
+- The image is refined into a high-resolution, photorealistic output.
+- No additional noise is added, preserving multi-view consistency.
+
+---
+
+### Step 5: Outputs
+- A **single high-resolution image** that supports multiple semantic interpretations
+  under different transformations.
+- Optional animations and quantitative metrics can be generated for analysis.
+
