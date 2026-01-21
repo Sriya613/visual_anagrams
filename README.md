@@ -31,7 +31,7 @@ a reference image and text prompts are processed through a three-stage diffusion
 pipeline to produce multi-view visual anagrams.
 
 <p align="center">
-  <img src="visual_anagrams/figures/System Architecture/Simple Architecture Diagram.jpg" width="800"/>
+  <img src="figures/System Architecture/Simple Architecture Diagram.jpg" width="800"/>
 </p>
 
 ---
