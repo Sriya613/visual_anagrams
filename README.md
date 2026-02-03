@@ -84,3 +84,71 @@ The detailed architecture highlights the internal denoising loop, multi-view pro
 <p align="center"> <img src="figures/System Architecture/Detailed Architecture Diagram.jpg" width="900"/> </p>
 
 ---
+
+### What Is a Transformation?
+A **transformation** is an invertible operation that produces an alternative view of
+the same image (such as a flip, rotation, or patch rearrangement), enabling a
+single image to reveal different meanings under different views.
+
+Most visual anagram pipelines rely on a restricted set of well-known, predefined
+noise-preserving transformations, including **Horizontal and Vertical Flips**, **180° Rotation**, **90° Rotation**, **Colour Contrast / Channel Reweighting**, **Jigsaw Transformations**, **Patch Permutation (reordering fixed patches)**.
+To expand the expressive power of visual anagrams, we introduce **new classes
+of fully invertible transformations** that operate at patch, geometric, and
+colour-space levels. Below are qualitative examples for each.
+
+---
+
+### Patch Flip Transformations (`patch_flip/`)
+
+Patch flip transformations divide the image into fixed-size patches and apply
+independent **horizontal or vertical flips within each patch**, introducing
+strong local variation while preserving global invertibility.
+
+<p align="center">
+  <img src="figures/Output Images/Horizontal Patch Flipping.png" width="800"/>
+</p>
+
+<p align="center">
+  <img src="figures/Output Images/Vertical Patch Flipping.png" width="800"/>
+</p>
+
+📽️ *Animated examples for patch flips are available in*  
+`visual_anagrams/figures/animation/`
+
+---
+
+### Triangle-Based Transformations (`triangle_views/`)
+
+Triangle-based views partition the image into fixed triangular regions and apply
+structured permutations or 180° flips combined with triangle swaps. These
+transformations preserve grid alignment while enabling stronger geometric
+divergence than standard patch permutations.
+
+<p align="center">
+  <!-- Replace with triangle example image if added -->
+  <em>See multiple triangle-based examples in figures/Output Images</em>
+</p>
+
+<p align="center">
+  <img src="figures/Output Images/Horizontal Patch Flipping.png" width="800"/>
+</p>
+
+📽️ *Animations demonstrating triangle permutations and flips are provided in*  
+`figures/animation/`
+
+---
+
+### Colour Permutation Transformations (`colour_permute/`)
+
+Colour permutation views operate directly in RGB colour space using **orthonormal
+transformations**, enabling semantic divergence through colour changes without
+altering spatial structure.
+
+<p align="center">
+  <img src="visual_anagrams/figures/Output Images/Color Permute and Rotate.png" width="800"/>
+</p>
+
+📽️ *Colour-space animation examples can be found in*  
+`visual_anagrams/figures/animation/`
+
+---
