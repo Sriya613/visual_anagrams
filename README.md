@@ -110,8 +110,8 @@ but must be a multiple of 8.
 </p>
 
 <p align="center">
-  <img src="figures/animations/horizontal flip.gif" width="380"/>
   <img src="figures/animations/horizontal flip 2.gif" width="380"/>
+  <img src="figures/animations/horizontal flip 3.gif" width="380"/>
 </p>
 
 Examples:
@@ -126,7 +126,7 @@ Examples:
 </p>
 <p align="center">
   <img src="figures/animations/vertical flip.gif" width="380"/>
-  <img src="figures/animations/horizontal flip 2.gif" width="380"/>
+  <img src="figures/animations/Vertical Flipping Animation.gif" width="380"/>
 </p>
 
 
