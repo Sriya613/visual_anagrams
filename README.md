@@ -146,10 +146,66 @@ transformations**, enabling semantic divergence through colour changes without
 altering spatial structure.
 
 <p align="center">
-  <img src="visual_anagrams/figures/Output Images/Color Permute and Rotate.png" width="800"/>
+  <img src="figures/Output Images/Color Permute and Rotate.png" width="800"/>
 </p>
 
 📽️ *Colour-space animation examples can be found in*  
 `visual_anagrams/figures/animation/`
 
 ---
+
+## Combined Transformations
+
+Combined transformations allow **multiple compatible transformations** to be
+applied **simultaneously within a single diffusion process**, enabling more
+expressive and complex visual anagrams than single-view setups.
+
+Instead of treating each transformation independently, compatible operations
+(e.g., patch flipping + colour permutation, rotation + colour shift) are
+**composed into a single view** with a well-defined inverse. This ensures that
+noise predictions from different transformed views can still be mapped back to a
+shared canonical space and aggregated consistently during diffusion.
+
+---
+
+### Image-to-Image Combined Transformations
+
+In the **image-to-image setting**, combined transformations are applied while
+anchoring generation to a reference image. This preserves global structure while
+allowing multiple transformations to jointly influence the final output. As a
+result, the generated image maintains spatial coherence across views while
+revealing distinct semantics under different composite transformations.
+
+<p align="center">
+  <img src="figures/Output Images/Image to Image Merged Transformation.png" width="850"/>
+</p>
+
+---
+
+### Text-to-Image Combined Transformations
+
+In the **text-to-image setting**, combined transformations are driven purely by
+text prompts corresponding to different views. The model learns to encode
+multiple semantic interpretations within a single image while satisfying all
+composed transformation constraints, without relying on an explicit reference
+image.
+
+<p align="center">
+  <img src="figures/Output Images/Text to Image Merged Transformation.png" width="850"/>
+</p>
+
+---
+
+### Why This Is Novel
+
+Prior visual anagram pipelines typically support **only one transformation per
+view**, limiting the complexity and expressiveness of generated illusions. Our
+approach introduces a **composable multi-view formulation** that enables:
+
+- Joint enforcement of multiple transformations in a single diffusion trajectory
+- Greater perceptual ambiguity and richer multi-view interpretations
+- Consistent behavior across both image-to-image and text-to-image pipelines
+
+This significantly expands the design space of diffusion-based visual anagrams,
+allowing more controlled, flexible, and visually compelling multi-view illusions.
+
