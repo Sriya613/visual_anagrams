@@ -109,6 +109,11 @@ but must be a multiple of 8.
   <img src="figures/Transformations' Illustrations/Patch Based Horizontal Flip.png" width="800"/>
 </p>
 
+<p align="center">
+  <img src="figures/animations/horizontal flip.gif" width="380"/>
+  <img src="figures/animations/horizontal flip 2.gif" width="380"/>
+</p>
+
 Examples:
 <p align="center">
   <img src="figures/Output Images/Horizontal Patch Flipping.png" width="800"/>
@@ -119,14 +124,22 @@ Examples:
 <p align="center">
   <img src="figures/Transformations' Illustrations/Patch Based Vertical Flip.png" width="800"/>
 </p>
+<p align="center">
+  <img src="figures/animations/vertical flip.gif" width="380"/>
+  <img src="figures/animations/horizontal flip 2.gif" width="380"/>
+</p>
+
 
 Examples:
 <p align="center">
   <img src="figures/Output Images/Vertical Patch Flipping.png" width="800"/>
 </p>
 
-📽️ *Animated examples for patch flips are available in*  
-`visual_anagrams/figures/animation/`
+**Randomised Patch Flipping**
+<p align="center">
+  <img src="figures/animations/randomized patch flipping.gif" width="600"/>
+</p>
+
 
 ---
 
@@ -143,11 +156,26 @@ divergence than standard patch permutations.
   <img src="figures/Transformations' Illustrations/Triangle Patch Permute.png" width="800"/>
 </p>
 
+Animation:
+<p align="center">
+  <img src="figures/animations/triangle permute.gif" width="380"/>
+  <img src="figures/animations/triangle permute 2.gif" width="380"/>
+</p>
+
+
+
 **Triangle Patch Flipping**
 
 <p align="center">
   <img src="figures/Transformations' Illustrations/Triangle Patch Flip.png" width="800"/>
 </p>
+
+Animation:
+<p align="center">
+  <img src="figures/animations/triangle flip.gif" width="380"/>
+  <img src="figures/animations/triangle flip 2.gif" width="380"/>
+</p>
+
 
 <p align="center">
   <!-- Replace with triangle example image if added -->
@@ -173,6 +201,12 @@ altering spatial structure.
   <img src="figures/Transformations' Illustrations/Color Permute.png" width="800"/>
 </p>
 
+Animations:
+<p align="center">
+  <img src="figures/animations/color contrast 1.gif" width="380"/>
+  <img src="figures/animations/color contrast 2.gif" width="380"/>
+</p>
+
 Examples:
 <p align="center">
   <img src="figures/Output Images/Color Permute and Rotate.png" width="800"/>
@@ -195,8 +229,12 @@ Instead of treating each transformation independently, compatible operations
 noise predictions from different transformed views can still be mapped back to a
 shared canonical space and aggregated consistently during diffusion.
 
-<p align="center">
+<!-- <p align="center">
   <img src="figures/Transformations' Illustrations/Combined Views Transformation.png" width="850"/>
+</p> -->
+
+<p align="center">
+  <img src="figures/animations/Text to Image Merged Transformation.gif" width="800"/>
 </p>
 
 ---
