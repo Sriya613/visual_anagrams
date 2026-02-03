@@ -106,9 +106,21 @@ strong local variation while preserving global invertibility. The number of patc
 but must be a multiple of 8.
 
 <p align="center">
+  <img src="figures/Transformations' Illustrations/Patch Based Horizontal Flip.png" width="800"/>
+</p>
+
+Examples:
+<p align="center">
   <img src="figures/Output Images/Horizontal Patch Flipping.png" width="800"/>
 </p>
 
+**Vertical Flip**
+
+<p align="center">
+  <img src="figures/Transformations' Illustrations/Patch Based Vertical Flip.png" width="800"/>
+</p>
+
+Examples:
 <p align="center">
   <img src="figures/Output Images/Vertical Patch Flipping.png" width="800"/>
 </p>
@@ -124,6 +136,18 @@ Triangle-based views partition the image into fixed triangular regions and apply
 structured permutations or 180° flips combined with triangle swaps. These
 transformations preserve grid alignment while enabling stronger geometric
 divergence than standard patch permutations.
+
+**Triangle Patch Permutation**
+
+<p align="center">
+  <img src="figures/Transformations' Illustrations/Triangle Patch Permute.png" width="800"/>
+</p>
+
+**Triangle Patch Flipping**
+
+<p align="center">
+  <img src="figures/Transformations' Illustrations/Triangle Patch Flip.png" width="800"/>
+</p>
 
 <p align="center">
   <!-- Replace with triangle example image if added -->
@@ -146,6 +170,11 @@ transformations**, enabling semantic divergence through colour changes without
 altering spatial structure.
 
 <p align="center">
+  <img src="figures/Transformations' Illustrations/Color Permute.png" width="800"/>
+</p>
+
+Examples:
+<p align="center">
   <img src="figures/Output Images/Color Permute and Rotate.png" width="800"/>
 </p>
 
@@ -165,6 +194,10 @@ Instead of treating each transformation independently, compatible operations
 **composed into a single view** with a well-defined inverse. This ensures that
 noise predictions from different transformed views can still be mapped back to a
 shared canonical space and aggregated consistently during diffusion.
+
+<p align="center">
+  <img src="figures/Transformations' Illustrations/Combined Views Transformation.png" width="850"/>
+</p>
 
 ---
 
