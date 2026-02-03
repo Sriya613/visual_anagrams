@@ -109,6 +109,7 @@ but must be a multiple of 8.
   <img src="figures/Transformations' Illustrations/Patch Based Horizontal Flip.png" width="800"/>
 </p>
 
+Animation:
 <p align="center">
   <img src="figures/animations/horizontal flip 2.gif" width="380"/>
   <img src="figures/animations/horizontal flip 3.gif" width="380"/>
@@ -124,9 +125,11 @@ Examples:
 <p align="center">
   <img src="figures/Transformations' Illustrations/Patch Based Vertical Flip.png" width="800"/>
 </p>
+
+Animation:
 <p align="center">
   <img src="figures/animations/vertical flip.gif" width="380"/>
-  <img src="figures/animations/Vertical Flipping Animation.gif" width="380"/>
+  <img src="figures/animations/vertical flip 2.gif" width="380"/>
 </p>
 
 
@@ -176,12 +179,7 @@ Animation:
   <img src="figures/animations/triangle flip 2.gif" width="380"/>
 </p>
 
-
-<p align="center">
-  <!-- Replace with triangle example image if added -->
-  <em>See multiple triangle-based examples in figures/Output Images</em>
-</p>
-
+Examples:
 <p align="center">
   <img src="figures/Output Images/Triangle Flip and Permute.png" width="800"/>
 </p>
