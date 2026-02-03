@@ -102,7 +102,8 @@ colour-space levels. Below are qualitative examples for each.
 
 Patch flip transformations divide the image into fixed-size patches and apply
 independent **horizontal or vertical flips within each patch**, introducing
-strong local variation while preserving global invertibility.
+strong local variation while preserving global invertibility. The number of patches can vary
+but must be a multiple of 8.
 
 <p align="center">
   <img src="figures/Output Images/Horizontal Patch Flipping.png" width="800"/>
@@ -130,7 +131,7 @@ divergence than standard patch permutations.
 </p>
 
 <p align="center">
-  <img src="figures/Output Images/Horizontal Patch Flipping.png" width="800"/>
+  <img src="figures/Output Images/Triangle Flip and Permute.png" width="800"/>
 </p>
 
 📽️ *Animations demonstrating triangle permutations and flips are provided in*  
