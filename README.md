@@ -20,6 +20,10 @@ operations by introducing **novel invertible patch-wise, triangular, and color-s
 transformations**, as well as a mechanism to **compose multiple compatible
 transformations within a single diffusion process**.
 
+Examples:
+<p align="center">
+<img src="figures/animations/triangle permute 2.gif" width="380"/>
+</p>
 ---
 
 ## System Architecture
@@ -84,6 +88,27 @@ The detailed architecture highlights the internal denoising loop, multi-view pro
 <p align="center"> <img src="figures/System Architecture/Detailed Architecture Diagram.jpg" width="900"/> </p>
 
 ---
+### Examples of Image to Image Transformations:
+
+Single Transformation:
+<p align="center">
+  <img src="figures/animations/apple.jpg" width="380"/>
+  <img src="figures/animations/image_single_transformation.gif" width="380"/>
+</p>
+<p>
+  Input image is the logo of Apple and the transformation chosen is 180 degree rotation with the input prompt as "Albert Einstein"
+</p>
+
+Combined Transformations:
+<p align="center">
+  <img src="figures/animations/Img to Img/island_tree_parrot_rotate_ccw_negate_animation+(2).jpg" width="380"/>
+  <img src="figures/animations/Img to Img/island_tree_parrot_rotate_ccw_negate_animation+(2).gif" width="380"/>
+</p>
+<p>
+  Input image is a painting of a cherry blossom and the transformations chosen are counter clockwise rotation and negation with the input prompt as "painting of a parrot"
+</p>
+---
+
 
 ### What Is a Transformation?
 A **transformation** is an invertible operation that produces an alternative view of
@@ -232,7 +257,7 @@ shared canonical space and aggregated consistently during diffusion.
 ---
 
 ## Demonstration
-<p>Here we provided the text prompts as "A sketch of a skull" and "A sketch of Albert Einstein" and chose thr transformations "Rotate by 180 degrees" and "Colour Negation".
+<p>Here we provided the text prompts as "A sketch of a skull" and "A sketch of Albert Einstein" and chose the transformations "Rotate by 180 degrees" and "Colour Negation".
 This is how the combination of transformations works.</p>
 
 <p align="center">
