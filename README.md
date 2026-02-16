@@ -100,7 +100,7 @@ The detailed architecture highlights the internal denoising loop, multi-view pro
   Input image is the logo of Apple and the transformation chosen is 180 degree rotation with the input prompt as "Albert Einstein"
 </p>
 
-### Combined Transformations:
+### Combined Transformation:
 <p align="center">
   <img src="figures/animations/Img to Img/island_tree_parrot_rotate_ccw_negate_animation+(2).jpg" width="380"/>
   <img src="figures/animations/Img to Img/island_tree_parrot_rotate_ccw_negate_animation+(2).gif" width="380"/>
@@ -238,8 +238,6 @@ Examples:
   <img src="figures/Output Images/Color Permute and Rotate.png" width="760"/>
 </p>
 
-📽️ *Colour-space animation examples can be found in*  
-`visual_anagrams/figures/animation/`
 
 ---
 
