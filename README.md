@@ -172,8 +172,8 @@ Examples:
 
 Animation:
 <p align="center">
-  <img src="figures/animations/vertical flip.gif" width="325"/>
-  <img src="figures/animations/vertical flip 2.gif" width="580"/>
+  <img src="figures/animations/vertical flip.gif" width="275"/>
+  <img src="figures/animations/vertical flip 2.gif" width="530"/>
 </p>
 
 
@@ -267,7 +267,7 @@ revealing distinct semantics under different composite transformations.
   <img src="figures/Output Images/Image to Image Merged Transformation.png" width="850"/>
 </p>
 
-# Animations:
+Animations:
 
 <table align="center">
   <tr>
