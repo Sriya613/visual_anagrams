@@ -253,6 +253,17 @@ revealing distinct semantics under different composite transformations.
   <img src="figures/Output Images/Image to Image Merged Transformation.png" width="850"/>
 </p>
 
+## Animations:
+| Input Image (JPG) | Generated Animation (GIF) |
+|------------------|---------------------------|
+| <img src="figures/animations/Img to Img/a painting of a pig_painting_inner_circle_negate_animation.jpg" width="300"/> | <img src="figures/animations/Img to Img/a painting of a pig_painting_inner_circle_negate_animation.gif" width="300"/> |
+| <img src="figures/animations/Img to Img/campfire_rotate_180_negate_animation.jpg" width="300"/> | <img src="figures/animations/Img to Img/campfire_rotate_180_negate_animation.gif" width="300"/> |
+| <img src="figures/animations/Img to Img/horse_white_mountain_rotate_180_negate_animation.jpg" width="300"/> | <img src="figures/animations/Img to Img/horse_white_mountain_rotate_180_negate_animation.gif" width="300"/> |
+| <img src="figures/animations/Img to Img/island_tree_parrot_rotate_ccw_negate_animation+(2).jpg" width="300"/> | <img src="figures/animations/Img to Img/island_tree_parrot_rotate_ccw_negate_animation+(2).gif" width="300"/> |
+| <img src="figures/animations/Img to Img/mountain_rotate_ccw_negate_animation.jpg" width="300"/> | <img src="figures/animations/Img to Img/mountain_rotate_ccw_negate_animation.gif" width="300"/> |
+| <img src="figures/animations/Img to Img/snowy_tree_painting_rotate_180_negate_animation.jpg" width="300"/> | <img src="figures/animations/Img to Img/snowy_tree_painting_rotate_180_negate_animation.gif" width="300"/> |
+| <img src="figures/animations/Img to Img/waves_dragon_rotate_cw_negate_animation (1).jpg" width="300"/> | <img src="figures/animations/Img to Img/waves_dragon_rotate_cw_negate_animation (1).gif" width="300"/> |
+
 ---
 
 ### Text-to-Image Combined Transformations
