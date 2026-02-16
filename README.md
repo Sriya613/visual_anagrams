@@ -253,6 +253,11 @@ image.
   <img src="figures/Output Images/Text to Image Merged Transformation.png" width="850"/>
 </p>
 
+Animations:
+<p align="center">
+  <img src="figures/animations/charcoal drawing of puppy__charcoal drawing of pig__jigsaw__rotate_180_0_animation.gif" width="380"/>
+  <img src="figures/animations/lithograph of bird__lithograph of grapes__jigsaw__rotate_cw_0_animation.gif" width="380"/>
+</p>
 ---
 
 ### Image-to-Image Combined Transformations
