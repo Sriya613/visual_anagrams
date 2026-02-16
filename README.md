@@ -241,6 +241,20 @@ This is how the combination of transformations works.</p>
 
 ---
 
+### Text-to-Image Combined Transformations
+
+In the **text-to-image setting**, combined transformations are driven purely by
+text prompts corresponding to different views. The model learns to encode
+multiple semantic interpretations within a single image while satisfying all
+composed transformation constraints, without relying on an explicit reference
+image.
+
+<p align="center">
+  <img src="figures/Output Images/Text to Image Merged Transformation.png" width="850"/>
+</p>
+
+---
+
 ### Image-to-Image Combined Transformations
 
 In the **image-to-image setting**, combined transformations are applied while
@@ -253,30 +267,68 @@ revealing distinct semantics under different composite transformations.
   <img src="figures/Output Images/Image to Image Merged Transformation.png" width="850"/>
 </p>
 
-## Animations:
-| Input Image (JPG) | Generated Animation (GIF) |
-|------------------|---------------------------|
-| <img src="figures/animations/Img to Img/a painting of a pig_painting_inner_circle_negate_animation.jpg" width="300"/> | <img src="figures/animations/Img to Img/a painting of a pig_painting_inner_circle_negate_animation.gif" width="300"/> |
-| <img src="figures/animations/Img to Img/campfire_rotate_180_negate_animation.jpg" width="300"/> | <img src="figures/animations/Img to Img/campfire_rotate_180_negate_animation.gif" width="300"/> |
-| <img src="figures/animations/Img to Img/horse_white_mountain_rotate_180_negate_animation.jpg" width="300"/> | <img src="figures/animations/Img to Img/horse_white_mountain_rotate_180_negate_animation.gif" width="300"/> |
-| <img src="figures/animations/Img to Img/island_tree_parrot_rotate_ccw_negate_animation+(2).jpg" width="300"/> | <img src="figures/animations/Img to Img/island_tree_parrot_rotate_ccw_negate_animation+(2).gif" width="300"/> |
-| <img src="figures/animations/Img to Img/mountain_rotate_ccw_negate_animation.jpg" width="300"/> | <img src="figures/animations/Img to Img/mountain_rotate_ccw_negate_animation.gif" width="300"/> |
-| <img src="figures/animations/Img to Img/snowy_tree_painting_rotate_180_negate_animation.jpg" width="300"/> | <img src="figures/animations/Img to Img/snowy_tree_painting_rotate_180_negate_animation.gif" width="300"/> |
-| <img src="figures/animations/Img to Img/waves_dragon_rotate_cw_negate_animation (1).jpg" width="300"/> | <img src="figures/animations/Img to Img/waves_dragon_rotate_cw_negate_animation (1).gif" width="300"/> |
+# Animations:
 
----
+<table align="center">
+  <tr>
+    <th>Input Image (JPG)</th>
+    <th>Generated Animation (GIF)</th>
+  </tr>
 
-### Text-to-Image Combined Transformations
+  <tr>
+    <td align="center">
+      <img src="figures/animations/Img to Img/island_tree_parrot_rotate_ccw_negate_animation+(2).jpg" width="300"/>
+    </td>
+    <td align="center">
+      <img src="figures/animations/Img to Img/island_tree_parrot_rotate_ccw_negate_animation+(2).gif" width="300"/>
+    </td>
+  </tr>
 
-In the **text-to-image setting**, combined transformations are driven purely by
-text prompts corresponding to different views. The model learns to encode
-multiple semantic interpretations within a single image while satisfying all
-composed transformation constraints, without relying on an explicit reference
-image.
+  <tr>
+    <td align="center">
+      <img src="figures/animations/Img to Img/snowy_tree_painting_rotate_180_negate_animation.jpg" width="300"/>
+    </td>
+    <td align="center">
+      <img src="figures/animations/Img to Img/snowy_tree_painting_rotate_180_negate_animation.gif" width="300"/>
+    </td>
+  </tr>
 
-<p align="center">
-  <img src="figures/Output Images/Text to Image Merged Transformation.png" width="850"/>
-</p>
+  <tr>
+    <td align="center">
+      <img src="figures/animations/Img to Img/waves_dragon_rotate_cw_negate_animation (1).jpg" width="300"/>
+    </td>
+    <td align="center">
+      <img src="figures/animations/Img to Img/waves_dragon_rotate_cw_negate_animation (1).gif" width="300"/>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <img src="figures/animations/Img to Img/a painting of a pig_painting_inner_circle_negate_animation.jpg" width="300"/>
+    </td>
+    <td align="center">
+      <img src="figures/animations/Img to Img/a painting of a pig_painting_inner_circle_negate_animation.gif" width="300"/>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <img src="figures/animations/Img to Img/mountain_rotate_ccw_negate_animation.jpg" width="300"/>
+    </td>
+    <td align="center">
+      <img src="figures/animations/Img to Img/mountain_rotate_ccw_negate_animation.gif" width="300"/>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <img src="figures/animations/Img to Img/horse_white_mountain_rotate_180_negate_animation.jpg" width="300"/>
+    </td>
+    <td align="center">
+      <img src="figures/animations/Img to Img/horse_white_mountain_rotate_180_negate_animation.gif" width="300"/>
+    </td>
+  </tr>
+</table>
 
 ---
 
