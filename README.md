@@ -106,7 +106,7 @@ strong local variation while preserving global invertibility. The number of patc
 but must be a multiple of 8.
 
 <p align="center">
-  <img src="figures/Transformations' Illustrations/Patch Based Horizontal Flip.png" width="800"/>
+  <img src="figures/Transformations' Illustrations/Patch Based Horizontal Flip.png" width="760"/>
 </p>
 
 Animation:
@@ -128,8 +128,8 @@ Examples:
 
 Animation:
 <p align="center">
-  <img src="figures/animations/vertical flip.gif" width="380"/>
-  <img src="figures/animations/vertical flip 2.gif" width="380"/>
+  <img src="figures/animations/vertical flip.gif" width="325"/>
+  <img src="figures/animations/vertical flip 2.gif" width="580"/>
 </p>
 
 
@@ -231,8 +231,12 @@ shared canonical space and aggregated consistently during diffusion.
   <img src="figures/Transformations' Illustrations/Combined Views Transformation.png" width="850"/>
 </p> -->
 
+##Demonstration
+<p>Here we provided the text prompts as "A sketch of a skull" and "A sketch of Albert Einstein" and chose thr transformations "Rotate by 180 degrees" and "Colour Negation".
+This is how the combination of transformations works.</p>
+
 <p align="center">
-  <img src="figures/animations/Text to Image Merged Transformation.gif" width="800"/>
+  <img src="figures/animations/Text to Image Merged Transformation.gif" width="500"/>
 </p>
 
 ---
