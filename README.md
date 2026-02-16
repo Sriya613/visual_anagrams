@@ -199,8 +199,8 @@ Examples:
 
 Animation:
 <p align="center">
-  <img src="figures/animations/vertical flip.gif" width="275"/>
-  <img src="figures/animations/vertical flip 4.gif" width="530"/>
+  <img src="figures/animations/vertical flip.gif" width="380"/>
+  <img src="figures/animations/vertical flip 4.gif" width="380"/>
 </p>
 
 
