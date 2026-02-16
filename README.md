@@ -98,12 +98,56 @@ colour-space levels. Below are qualitative examples for each.
 
 ---
 
+### Triangle-Based Transformations (`triangle_views/`)
+
+Triangle-based views partition the image into fixed triangular regions and apply
+structured permutations or 180° flips combined with triangle swaps. These
+transformations preserve grid alignment while enabling stronger geometric
+divergence than standard patch permutations.
+
+**Triangle Patch Permutation**
+
+<p align="center">
+  <img src="figures/Transformations' Illustrations/Triangle Patch Permute.png" width="760"/>
+</p>
+
+Animation:
+<p align="center">
+  <img src="figures/animations/triangle permute.gif" width="380"/>
+  <img src="figures/animations/triangle permute 2.gif" width="380"/>
+</p>
+
+
+
+**Triangle Patch Flipping**
+
+<p align="center">
+  <img src="figures/Transformations' Illustrations/Triangle Patch Flip.png" width="760"/>
+</p>
+
+Animation:
+<p align="center">
+  <img src="figures/animations/triangle flip.gif" width="380"/>
+  <img src="figures/animations/triangle flip 2.gif" width="380"/>
+</p>
+
+Examples:
+<p align="center">
+  <img src="figures/Output Images/Triangle Flip and Permute.png" width="760"/>
+</p>
+
+
+---
+
+
 ### Patch Flip Transformations (`patch_flip/`)
 
 Patch flip transformations divide the image into fixed-size patches and apply
 independent **horizontal or vertical flips within each patch**, introducing
 strong local variation while preserving global invertibility. The number of patches can vary
 but must be a multiple of 8.
+
+**Horizontal Flip**
 
 <p align="center">
   <img src="figures/Transformations' Illustrations/Patch Based Horizontal Flip.png" width="760"/>
@@ -117,7 +161,7 @@ Animation:
 
 Examples:
 <p align="center">
-  <img src="figures/Output Images/Horizontal Patch Flipping.png" width="800"/>
+  <img src="figures/Output Images/Horizontal Patch Flipping.png" width="760"/>
 </p>
 
 **Vertical Flip**
@@ -146,49 +190,6 @@ Examples:
 
 ---
 
-### Triangle-Based Transformations (`triangle_views/`)
-
-Triangle-based views partition the image into fixed triangular regions and apply
-structured permutations or 180° flips combined with triangle swaps. These
-transformations preserve grid alignment while enabling stronger geometric
-divergence than standard patch permutations.
-
-**Triangle Patch Permutation**
-
-<p align="center">
-  <img src="figures/Transformations' Illustrations/Triangle Patch Permute.png" width="800"/>
-</p>
-
-Animation:
-<p align="center">
-  <img src="figures/animations/triangle permute.gif" width="380"/>
-  <img src="figures/animations/triangle permute 2.gif" width="380"/>
-</p>
-
-
-
-**Triangle Patch Flipping**
-
-<p align="center">
-  <img src="figures/Transformations' Illustrations/Triangle Patch Flip.png" width="800"/>
-</p>
-
-Animation:
-<p align="center">
-  <img src="figures/animations/triangle flip.gif" width="380"/>
-  <img src="figures/animations/triangle flip 2.gif" width="380"/>
-</p>
-
-Examples:
-<p align="center">
-  <img src="figures/Output Images/Triangle Flip and Permute.png" width="800"/>
-</p>
-
-📽️ *Animations demonstrating triangle permutations and flips are provided in*  
-`figures/animation/`
-
----
-
 ### Colour Permutation Transformations (`colour_permute/`)
 
 Colour permutation views operate directly in RGB colour space using **orthonormal
@@ -196,7 +197,7 @@ transformations**, enabling semantic divergence through colour changes without
 altering spatial structure.
 
 <p align="center">
-  <img src="figures/Transformations' Illustrations/Color Permute.png" width="800"/>
+  <img src="figures/Transformations' Illustrations/Color Permute.png" width="760"/>
 </p>
 
 Animations:
@@ -207,7 +208,7 @@ Animations:
 
 Examples:
 <p align="center">
-  <img src="figures/Output Images/Color Permute and Rotate.png" width="800"/>
+  <img src="figures/Output Images/Color Permute and Rotate.png" width="760"/>
 </p>
 
 📽️ *Colour-space animation examples can be found in*  
@@ -227,11 +228,10 @@ Instead of treating each transformation independently, compatible operations
 noise predictions from different transformed views can still be mapped back to a
 shared canonical space and aggregated consistently during diffusion.
 
-<!-- <p align="center">
-  <img src="figures/Transformations' Illustrations/Combined Views Transformation.png" width="850"/>
-</p> -->
 
-##Demonstration
+---
+
+## Demonstration
 <p>Here we provided the text prompts as "A sketch of a skull" and "A sketch of Albert Einstein" and chose thr transformations "Rotate by 180 degrees" and "Colour Negation".
 This is how the combination of transformations works.</p>
 
