@@ -200,7 +200,7 @@ Examples:
 Animation:
 <p align="center">
   <img src="figures/animations/vertical flip.gif" width="275"/>
-  <img src="figures/animations/vertical flip 2.gif" width="530"/>
+  <img src="figures/animations/vertical flip 4.gif" width="530"/>
 </p>
 
 
@@ -375,4 +375,12 @@ approach introduces a **composable multi-view formulation** that enables:
 
 This significantly expands the design space of diffusion-based visual anagrams,
 allowing more controlled, flexible, and visually compelling multi-view illusions.
+
+## Additional Transformation Outputs
+
+| | | |
+|---|---|---|
+| <img src="figures/animations/vertical flip 4.gif" width="260"/> | <img src="figures/animations/vertical flip 3.gif" width="260"/> | <img src="figures/animations/color contrast 3.gif" width="260"/> |
+| <img src="figures/animations/horizontal flip 2.gif" width="260"/> | <img src="figures/animations/triangle permute 3.gif" width="260"/> | <img src="figures/animations/color contrast 4.gif" width="260"/>|
+| <img src="figures/animations/horizontal flip.gif" width="260"/> | <img src="figures/animations/Img to Img/campfire_rotate_180_negate_animation.gif" width="260"/>  | <img src="figures/animations/horizontal flip 100.gif" width="260"/> |
 
