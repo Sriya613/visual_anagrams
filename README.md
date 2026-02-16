@@ -20,9 +20,10 @@ operations by introducing **novel invertible patch-wise, triangular, and color-s
 transformations**, as well as a mechanism to **compose multiple compatible
 transformations within a single diffusion process**.
 
-Examples:
+Example:
 <p align="center">
-<img src="figures/animations/triangle permute 2.gif" width="380"/>
+<img src="figures/animations/peng_giraffe.gif" width="360"/>
+<img src="figures/animations/triangle permute 2.gif" width="360"/>
 </p>
 
 ---
