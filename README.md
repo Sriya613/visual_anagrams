@@ -24,6 +24,7 @@ Examples:
 <p align="center">
 <img src="figures/animations/triangle permute 2.gif" width="380"/>
 </p>
+
 ---
 
 ## System Architecture
@@ -38,7 +39,6 @@ pipeline to produce multi-view visual anagrams.
   <img src="figures/System Architecture/Simple Architecture Diagram.jpg" width="800"/>
 </p>
 
----
 
 
 ## Step-by-Step Working Overview (Pipeline)
@@ -86,11 +86,11 @@ a single image that reveals **different meanings under specific transformations*
 ### Detailed Architecture 
 The detailed architecture highlights the internal denoising loop, multi-view projections, inverse mappings, and aggregation strategy used to maintain consistency across transformations during diffusion. 
 <p align="center"> <img src="figures/System Architecture/Detailed Architecture Diagram.jpg" width="900"/> </p>
-
 ---
-### Examples of Image to Image Transformations:
 
-Single Transformation:
+## Examples of Image to Image Transformations:
+
+### Single Transformation:
 <p align="center">
   <img src="figures/animations/apple.jpg" width="380"/>
   <img src="figures/animations/image_single_transformation.gif" width="380"/>
@@ -99,7 +99,7 @@ Single Transformation:
   Input image is the logo of Apple and the transformation chosen is 180 degree rotation with the input prompt as "Albert Einstein"
 </p>
 
-Combined Transformations:
+### Combined Transformations:
 <p align="center">
   <img src="figures/animations/Img to Img/island_tree_parrot_rotate_ccw_negate_animation+(2).jpg" width="380"/>
   <img src="figures/animations/Img to Img/island_tree_parrot_rotate_ccw_negate_animation+(2).gif" width="380"/>
@@ -107,6 +107,7 @@ Combined Transformations:
 <p>
   Input image is a painting of a cherry blossom and the transformations chosen are counter clockwise rotation and negation with the input prompt as "painting of a parrot"
 </p>
+
 ---
 
 
@@ -283,6 +284,7 @@ Animations:
   <img src="figures/animations/charcoal drawing of puppy__charcoal drawing of pig__jigsaw__rotate_180_0_animation.gif" width="380"/>
   <img src="figures/animations/lithograph of bird__lithograph of grapes__jigsaw__rotate_cw_0_animation.gif" width="380"/>
 </p>
+
 ---
 
 ### Image-to-Image Combined Transformations
