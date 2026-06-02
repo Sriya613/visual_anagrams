@@ -376,6 +376,32 @@ approach introduces a **composable multi-view formulation** that enables:
 This significantly expands the design space of diffusion-based visual anagrams,
 allowing more controlled, flexible, and visually compelling multi-view illusions.
 
+---
+
+
+## Comparison with Baseline
+## CombinedView Text-to-Image Evaluation
+
+Comparison of the proposed **CombinedView generation framework** against a baseline that applies transformations independently. The same two text prompts are provided for the novel and baseline, however the novel method combines both input transformations while basline can only do one at a time. The results demonstrate that combining transformations within a single generation process produces outputs that better satisfy both semantic and transformation requirements. Quantitative metrics corroborate the qualitative improvements across multiple transformation settings.
+
+<p align="center">
+  <img src="figures/Output Images/combined values.png" alt="CombinedView Pipeline Evaluation" width="1000"/>
+</p>
+
+---
+
+## Image-to-Image Pipeline Evaluation
+
+Comparison of the proposed **CombinedView image-to-image pipeline** with a baseline single-transformation approach. The novel approach has the ability to take in an input image and a prompt, but the baseline only takes in two text prompts. The visual examples illustrate the ability of the proposed method to apply multiple transformations simultaneously while preserving the target semantic concept. Quantitative results support the qualitative observations, showing improved consistency between content and transformation objectives.
+
+<p align="center">
+  <img src="figures/Output Images/imgtoimg valuess.png" alt="Image-to-Image Pipeline Evaluation" width="1000"/>
+</p>
+
+---
+
+
+
 ## Additional Transformation Outputs
 
 | | | |
